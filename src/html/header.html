@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header__wrapper">
             <div class="header__logo">
-                <img class="header__image" src="images/header__logo.svg" alt="logo">
+                <a href="#"><img class="header__image" src="images/header__logo.svg" alt="logo"></a>
             </div>
             <div class="header__nav">
                 <ul class="header__list">
@@ -14,10 +14,71 @@
                     <li class="header__item"><a href="#">Отзывы</a></li>
                 </ul>
             </div>
-            <div class="header__button">
-                <a class="header__link" href="#">
+            <div class="header__button-top">
+                <a class="header__link" id="myLink" href="#">
                     <span class="header__link-title">Связаться</span>
                 </a>
+            </div>
+
+
+
+
+            <div id="overlay"></div>
+            <div id="banner">
+                <div class="banner">Это ваш баннер
+                    <a href="#" id="closeBanner">Закрыть</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="row">
+            <div class="header__inner-left col-6">
+                <h2 class="header__description">Чистый Воздух</h2>
+                <h2 class="header__description">Вместе С</h2>
+                <h1 class="header__title">Pascal vent</h1>
+                <div class="header__slick col-12">
+                    <div class="header__inner-description">
+                        Проектирование, поставка и монтаж систем вентиляции и кондиционирования
+                    </div>
+                    <div class="header__inner-description">
+                        Проектирование, поставка и монтаж систем вентиляции и кондиционирования
+                    </div>
+                    <div class="header__inner-description">
+                        Проектирование, поставка и монтаж систем вентиляции и кондиционирования
+                    </div>
+                </div>
+                <div class="row header__items">
+                    <div class="col-6 row" style="column-gap:24px;">
+                        <img class="header__image-addres" src="images/header__address.svg" alt="">
+                        <div class="row-column">
+                            <p class="header__addres">Московский регион,</p>
+                            <p class="header__addres">Москва</p>
+                        </div>
+                    </div>
+                    <div class="col-6 row align-items-center" style="column-gap:22px;">
+                        <a href="tel:74923736331"><img class="header__image-tel" src="images/header__tel.webp"
+                                alt=""></a>
+                        <div class="row-column">
+                            <a href="tel:74923736331">
+                                <p class="header__tel">+ 7 492 373 63 31</p>
+                            </a>
+                            <a href="tel:74923736331">
+                                <p class="header__tel">+ 7 492 373 63 31</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__button-bottom col-12">
+                    <a class="header__link-bottom" href="#">
+                        <span class="header__link-title-bottom">Оставить заявку</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__inner-right col-6">
+                <img src="images/inner-right.webp" alt="">
             </div>
         </div>
     </div>

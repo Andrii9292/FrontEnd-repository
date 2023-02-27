@@ -32,39 +32,45 @@ body
 
 @font-face
   font-family: 'Proxima Nova'
-  src: url('ProximaNova-Bold.ttf') format('truetype')
+  src: url('../fonts/ProximaNova-Bold.ttf') format('truetype')
   font-weight: bold
   font-style: normal
   font-display: swap
 
 @font-face
   font-family: 'Proxima Nova'
-    src: url('ProximaNova-Regular.ttf') format('truetype')
+  src: url('../fonts/ProximaNova-Regular.ttf') format('truetype')
   font-weight: normal
   font-style: normal
   font-display: swap
 
 @font-face
   font-family: 'Ruberoid'
-  src: url('Ruberoid-Bold.ttf') format('truetype')
+  src: url('../fonts/Ruberoid-Bold.ttf') format('truetype')
   font-weight: bold
   font-style: normal
   font-display: swap
 
 @font-face
   font-family: 'Ruberoid'
-    src: url('Ruberoid-Regular.ttf') format('truetype')
+  src: url('../fonts/Ruberoid-Regular.ttf') format('truetype')
   font-weight: normal
   font-style: normal
   font-display: swap
 .none
   display: none
-@media screen and ( max-width:1440px) and ( min-width: 1201px )
-  .container
-    max-width: 1470px
-@media screen and ( max-width:2560px) and ( min-width: 1441px )
-  .container
-    max-width: 2590px
+.container
+  max-width: 1200px
 @mixin flex
   display: flex
   flex-wrap: wrap
+.slick-next, .slick-prev
+  display: none!important
+.slick-dots
+  top: 0
+  left: 0
+  bottom: 0!important
+  text-align: left!important
+.slick-dots li button:before
+  color: #5CCD6A!important
+  font-size: 40px!important
