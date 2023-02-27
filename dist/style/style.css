@@ -35,19 +35,60 @@ body {
   width: 100%;
   background-color: white;
   color: black;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Proxima Nova", "Ruberoid";
   font-weight: 400;
 }
 
-/*Пример picture*/
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-family-src: url("ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ruberoid";
+  src: url("Ruberoid-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ruberoid";
+  font-family-src: url("Ruberoid-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .none {
   display: none;
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1201px) {
+  .container {
+    max-width: 1470px;
+  }
+}
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+  .container {
+    max-width: 2590px;
+  }
+}
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 26px;
+}
+.header__list a {
+  font-size: 30px;
 }
 
 /* Slider */

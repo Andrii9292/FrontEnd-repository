@@ -24,6 +24,7 @@
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
     "gulp-uglify": "^3.0.2",
-    "minify": "^9.2.0"
+    "minify": "^9.2.0",
+    "mkdirp": "^2.1.3"
   }
 }

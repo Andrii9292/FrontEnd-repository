@@ -102,6 +102,22 @@ function watchFiles() {
     watch(path.watch.img, images);
 }
 
+
+const fs = require('fs');
+const mkdirp = require('mkdirp');
+
+function fonts() {
+    // Check if the directory exists, and create it if it doesn't
+    if (!fs.existsSync(path.build.fonts)) {
+        mkdirp.sync(path.build.fonts);
+    }
+
+    return src(path.src.fonts)
+        .pipe(dest(path.build.fonts))
+        .pipe(browsersync.stream());
+}
+
+
 const build = series(clean, parallel(js, css, html, images, fonts));
 const dev = series(build, parallel(watchFiles, browserSync));
 
