@@ -31,6 +31,13 @@
         line-height: 74px
         text-align: right
         color: #495E4C
+        &::before
+            content: ""
+            width: 148px
+            border-top: 3px solid #78c081
+            position: absolute
+            top: 110px
+            left: 69px
     &__title
         font-family: Ruberoid
         font-size: 6.4rem
@@ -60,11 +67,15 @@
         line-height: 2.3rem
         letter-spacing: 0.04em
         color: #FFF
+    &__link-title-bottom2
+        text-transform: uppercase
     &__link-bottom
         background: #5CCD6A
         box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36)
         border-radius: 30px
         padding: 33px 126px
+    &__link-bottom2
+        padding: 19px 107px 15px
     &__slick
         margin-bottom: 52px!important
     &__items
@@ -72,14 +83,15 @@
         justify-content: flex-end
     &__button-bottom
         padding-bottom: 112px
-    &__inner-left
-        z-index: 1
+    &__button-bottom2
+        padding-bottom: 60px
     &__inner-right
         overflow-x: clip
+        position: relative
         img
-            position: relative
-            top: -21%
-            left: -21%
+            position: absolute
+            top: -33.5%
+            left: -22%
             z-index: 0
 #overlay
     position: fixed
@@ -87,20 +99,112 @@
     left: 0
     width: 100%
     height: 100%
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgba(0,0,0,0.4)
     display: none
     z-index: 999
-
+    backdrop-filter: blur(8px)
 #banner
     position: fixed
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    background-color: #fff
-    padding: 20px
+    background-color: #D9FADD
     display: none
     z-index: 1000
-
+    border-radius: 50px
 #closeBanner
     display: block
     margin-top: 10px
+    height: 69px
+    width: 73px
+    position: absolute
+    top: -95px
+    right: 0
+#banner2
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #D9FADD
+    display: none
+    z-index: 1000
+    border-radius: 50px
+#closeBanner2
+    display: block
+    margin-top: 10px
+    height: 69px
+    width: 73px
+    position: absolute
+    top: -95px
+    right: 0
+.banner
+    &__title
+        background: #D9FADD
+        box-shadow: 0px 0px 10px rgba(73, 93, 76, 0)
+        border-radius: 50px 50px 0 0
+        padding: 35px 91px 20px 35px
+        h2
+            font-family: Ruberoid
+            font-size: 4rem
+            line-height: 5.5rem
+            max-width: 319px
+            max-height: 110px
+            overflow: hidden
+            margin-bottom: 0
+            color: #495E4C
+            position: relative
+            &::before
+                content: ""
+                border-top: 3px solid #78c081
+                width: 136px
+                position: absolute
+                top: 80px
+                left: 181px
+    &__decription
+        background: #FFFFFF
+        box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1)
+        border-radius: 35px 35px 50px 50px
+        padding: 35px 35px 44px
+    &__item
+        font-size: 1.6rem
+        line-height: 2.6rem
+        max-height: 78px
+        max-width: 375px
+        color: #7CA381
+        margin-bottom: 20px
+    &__item2
+        font-size: 1.6rem
+        font-weight: 600
+        line-height: 1.9rem
+        color: #7CA381
+        margin-bottom: 15px
+    &__wrapper
+        column-gap: 15px
+        padding-left: 15px
+        margin-bottom: 43px
+    &__wrapper2
+        column-gap: 15px
+        padding-left: 15px
+    &__wrapper-item
+        column-gap: 15px
+    &__image-tel
+        width: 22px
+    &__input-text
+        background: #FFFFFF
+        box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14)
+        border-radius: 15px
+        padding: 16px 0 16px 20px
+        &::placeholder
+            font-size: 1.4rem
+            line-height: 1.7rem
+            color: #7CA381
+    &__input-tel
+        background: #FFFFFF
+        box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14)
+        border-radius: 15px
+        padding: 16px 0 16px 20px
+        margin-bottom: 64px
+        &::placeholder
+            font-size: 1.4rem
+            line-height: 1.7rem
+            color: #7CA381
