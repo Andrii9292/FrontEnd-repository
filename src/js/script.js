@@ -39,3 +39,24 @@ closeBanner2.addEventListener('click', function () {
     overlay.style.display = 'none';
     banner2.style.display = 'none';
 });
+
+
+$(document).ready(function () {
+    // По умолчанию активен первый блок
+    $('.services__conditioning').addClass('active');
+    $('#block1').addClass('active');
+
+    // Обработчик клика по блоку 1
+    $('.services__conditioning').click(function (e) {
+        e.preventDefault();
+        $('#block1').addClass('active');
+        $('#block2').removeClass('active');
+    });
+
+    // Обработчик клика по блоку 2
+    $('.services__ventilation-systems').click(function (e) {
+        e.preventDefault();
+        $('#block1').removeClass('active');
+        $('#block2').addClass('active');
+    });
+});

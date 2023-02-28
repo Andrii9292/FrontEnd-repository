@@ -98,6 +98,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#F1F1F1), color-stop(16.25%, #F0F2F1), color-stop(43.26%, #EBEDEC), color-stop(72.5%, #E6E8E7), to(#DEE2E1));
   background: -o-linear-gradient(top, #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%, #E6E8E7 72.5%, #DEE2E1 100%);
   background: linear-gradient(180deg, #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%, #E6E8E7 72.5%, #DEE2E1 100%);
+  margin-bottom: 100px;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -505,6 +506,281 @@ body {
 .td:hover {
   text-decoration: underline;
   color: #7b897d;
+}
+
+.services {
+  margin-bottom: 100px;
+}
+.services__title {
+  font-family: Ruberoid;
+  font-size: 4.4rem;
+  line-height: 6rem;
+  color: #495E4C;
+  position: relative;
+}
+.services__title::before {
+  content: "";
+  border-top: 2px solid #78C081;
+  width: 245px;
+  position: absolute;
+  top: 75%;
+  right: 6.5%;
+}
+.services__text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #848484;
+}
+.services__text--1 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #FFFFFF;
+}
+.services__text--2 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #FFF;
+}
+.services__text--3 {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #495D4C;
+  max-height: 60px;
+  max-width: 307px;
+  overflow: hidden;
+}
+.services--right {
+  background: #D9FADD;
+  border-radius: 65px 65px 0px 65px;
+  padding: 15px 0 0 30px;
+}
+.services__climate-systems {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services__conditioning {
+  background: #5ccd6a;
+  border-radius: 40px 0px 0px 0px;
+  padding: 16px 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.services__conditioning:hover {
+  background: #54E165;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.services__ventilation-systems {
+  background: #5CCD6A;
+  border-radius: 0px 40px 0px 0px;
+  padding: 16px 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.services__ventilation-systems:hover {
+  background: #54E165;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.scale {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.scale:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.services__conditioning, #block1, #block2 {
+  display: none;
+}
+
+.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.touch {
+  background-color: #FFF !important;
+}
+
+.text-color {
+  color: #7CA281;
+}
+
+.complex {
+  position: relative;
+  z-index: 1;
+}
+.complex__image1 {
+  position: absolute;
+  top: 7%;
+  left: -5%;
+  z-index: 0;
+}
+.complex__image2 {
+  position: absolute;
+  top: 23%;
+  left: 30%;
+  z-index: 0;
+}
+.complex__image3 {
+  position: absolute;
+  top: 58%;
+  left: 25%;
+  z-index: 0;
+}
+.complex__title {
+  font-family: Ruberoid;
+  font-size: 4.5rem;
+  line-height: 6rem;
+  color: #495E4C;
+  max-height: 120px;
+  max-width: 867px;
+  position: relative;
+  margin-bottom: 85px;
+}
+.complex__title::before {
+  content: "";
+  border-top: 2px solid #78C081;
+  width: 245px;
+  position: absolute;
+  top: 75%;
+  right: 2%;
+}
+.complex__card-wrapper {
+  -webkit-column-gap: 47px;
+     -moz-column-gap: 47px;
+          column-gap: 47px;
+  margin-bottom: 100px;
+}
+.complex__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+}
+.complex__card-title {
+  margin-bottom: 35px;
+}
+.complex__card-title h3 {
+  font-family: Ruberoid;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #78C081;
+  max-height: 60px;
+  max-width: 205px;
+  overflow: hidden;
+  padding: 12px 0;
+}
+.complex__card-image {
+  max-height: 92px;
+  max-width: 257px;
+  position: relative;
+}
+.complex__card-image::before {
+  content: "от 100 000 ₽";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #495D4C;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 16px;
+}
+.complex__card-image img {
+  width: 100%;
+}
+.complex__card-image3::before {
+  content: "от 150 000 ₽";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #495D4C;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 16px;
+}
+.complex__card-image4::before {
+  content: "от 150 000 ₽";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #495D4C;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 16px;
+}
+.complex__card-image5::before {
+  content: "от 200 000 ₽";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #495D4C;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 16px;
+}
+.complex__card-image6::before {
+  content: "от 200 000 ₽";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #495D4C;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 16px;
+}
+.complex__card-image7::before {
+  content: "от 200 000 ₽";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #495D4C;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 16px;
 }
 
 /* Slider */
