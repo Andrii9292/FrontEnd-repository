@@ -495,6 +495,7 @@
             max-width: 100%
 .schemeWork
     row-gap: 30px
+    margin-bottom: 140px
     &__title
         font-family: Ruberoid
         font-size: 4.5rem
@@ -534,3 +535,63 @@
         max-height: 80px
         overflow: hidden
         position: relative
+.portfolio
+    &__items
+        justify-content: space-between
+    &__title
+        text-transform: capitalize
+        font-family: Ruberoid
+        font-size: 4.5rem
+        line-height: 6rem
+
+        color: #495E4C
+        max-height: 120px
+        max-width: 450px
+    &__description
+        font-size: 1.6rem
+        line-height: 2.6rem
+
+        color: #848484
+        max-height: 104px
+        max-width: 641px
+    &__card-wrapper
+        row-gap: 30px
+    &__card
+        max-height: 456px
+        max-width: 270px
+        overflow: hidden
+        position: relative
+        transition: all 0.2s linear
+        img
+            width: 100%
+        &:hover
+            .portfolio__card-description
+                display: block
+            transition: all 0.2s linear
+    &__card-title
+        text-transform: capitalize
+        font-family: Ruberoid
+        font-size: 2.4rem
+        line-height: 3.4rem
+
+        color: #fff
+        max-height: 68px
+        max-width: 156px
+        overflow: hidden
+
+        position: absolute
+        bottom: 45px
+        left: 40px
+    &__card-description
+        display: none
+        font-size: 1.6rem
+        line-height: 1.9rem
+
+        color: #fff
+        max-height: 40px
+        max-width: 156px
+        overflow: hidden
+
+        position: absolute
+        bottom: 0
+        left: 40px
