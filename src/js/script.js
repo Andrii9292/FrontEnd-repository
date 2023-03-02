@@ -8,10 +8,20 @@
 
 
 
-
-
 const link1 = document.getElementById('myLink');
 const link2 = document.getElementById('myLink2');
+const link2Clone = link2.cloneNode(true); // клонирование ссылки myLink2
+
+
+const spanElement = link2Clone.querySelector('span'); // получение элемента span в склонированной ссылке
+spanElement.textContent = 'ЗАПОЛНИТЬ ЗАЯВКУ'; // изменение текста внутри тега span
+// добавление обработчика событий на склонированную ссылку
+link2Clone.addEventListener('click', function (e) {
+    e.preventDefault();
+    overlay.style.display = 'block';
+    banner2.style.display = 'block';
+});
+
 const overlay = document.getElementById('overlay');
 const banner1 = document.getElementById('banner');
 const banner2 = document.getElementById('banner2');
@@ -40,7 +50,71 @@ closeBanner2.addEventListener('click', function () {
     banner2.style.display = 'none';
 });
 
+// добавление склонированной ссылки в DOM
+document.body.appendChild(link2Clone);
 
+
+const myBlock = document.getElementById('myBlock');
+myBlock.appendChild(link2Clone);
+
+
+// получаем элементы, которые необходимо скрыть/показать
+const body = document.querySelector('body');
+const html = document.querySelector('html');
+
+
+//............ЗАПРЕЩАЕМ СКРОЛЛ СТРАНИЦЫ ПРИ ОТКРЫТОМ БАННЕРЕ..........
+link1.addEventListener('click', function (e) {
+    e.preventDefault();
+    overlay.style.display = 'block';
+    banner1.style.display = 'block';
+
+    // запрещаем скролл страницы
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+});
+
+link2.addEventListener('click', function (e) {
+    e.preventDefault();
+    overlay.style.display = 'block';
+    banner2.style.display = 'block';
+
+    // запрещаем скролл страницы
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+});
+
+link2Clone.addEventListener('click', function (e) {
+    e.preventDefault();
+    overlay.style.display = 'block';
+    banner2.style.display = 'block';
+
+    // запрещаем скролл страницы
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+});
+
+closeBanner1.addEventListener('click', function () {
+    overlay.style.display = 'none';
+    banner1.style.display = 'none';
+
+    // возвращаем скролл страницы
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+});
+
+closeBanner2.addEventListener('click', function () {
+    overlay.style.display = 'none';
+    banner2.style.display = 'none';
+
+    // возвращаем скролл страницы
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+});
+
+//------------------------------------------------//
+
+//..............ПЕРЕКЛЮЧАТЕЛЬ БЛОКОВ..............
 $(document).ready(function () {
     // По умолчанию активен первый блок
     $('.services__conditioning').addClass('active');
@@ -60,3 +134,6 @@ $(document).ready(function () {
         $('#block2').addClass('active');
     });
 });
+
+
+

@@ -306,6 +306,17 @@ body {
   position: absolute;
   top: -95px;
   right: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#closeBanner:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 #banner2 {
@@ -329,6 +340,17 @@ body {
   position: absolute;
   top: -95px;
   right: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#closeBanner2:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .banner__title {
@@ -412,6 +434,9 @@ body {
   transition: all 0.3s linear;
 }
 .banner__input-text {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #7CA381;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14);
           box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14);
@@ -444,6 +469,9 @@ body {
   color: #7CA381;
 }
 .banner__input-tel {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #7CA381;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14);
           box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14);
@@ -708,6 +736,11 @@ body {
   max-height: 92px;
   max-width: 257px;
   position: relative;
+}
+.complex__card-image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .complex__card-image::before {
   content: "от 100 000 ₽";
@@ -1058,7 +1091,7 @@ body {
 }
 .peculiarities__description {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2.6rem;
   color: #848484;
   max-width: 441px;
@@ -1091,6 +1124,7 @@ body {
 
 .comfort {
   padding-top: 100px;
+  margin-bottom: 100px;
 }
 .comfort__wrapper1 {
   padding-top: 56px;
@@ -1109,6 +1143,92 @@ body {
       -ms-flex: 1 0 13%;
           flex: 1 0 13%;
   max-width: 7%;
+}
+.comfort__description p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #7CA381;
+  max-height: 48px;
+  max-width: 469px;
+  padding-left: 25px;
+  position: relative;
+}
+.comfort__description p::before {
+  content: ".";
+  font-size: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: -26px;
+  left: -5px;
+}
+.comfort__text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #848484;
+  max-height: 104px;
+  max-width: 498px;
+  margin-bottom: 90px;
+}
+.comfort__wrapper2 {
+  row-gap: 30px;
+}
+.comfort__wrapper2-img:nth-child(2) {
+  padding-top: 50px;
+}
+.comfort__wrapper2-img:nth-child(4) {
+  padding-top: 50px;
+}
+.comfort__wrapper2-img img {
+  max-width: 100%;
+}
+
+.schemeWork {
+  row-gap: 30px;
+}
+.schemeWork__title {
+  font-family: Ruberoid;
+  font-size: 4.5rem;
+  line-height: 6rem;
+  color: #495E4C;
+  max-height: 60px;
+  max-width: 977px;
+}
+.schemeWork__card {
+  position: relative;
+}
+.schemeWork__card:nth-child(odd) {
+  text-align: right;
+  padding-top: 100px;
+}
+.schemeWork__card img {
+  position: absolute;
+  top: -30%;
+  right: 19%;
+  left: 30%;
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
+}
+.schemeWork__card-title {
+  font-family: Ruberoid;
+  font-size: 3.5rem;
+  line-height: 4.7rem;
+  text-transform: capitalize;
+  color: #78C081;
+  max-height: 47px;
+  overflow: hidden;
+  position: relative;
+}
+.schemeWork__card-title-1 {
+  text-align: center;
+}
+.schemeWork__card-description {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #495E4C;
+  max-height: 80px;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Slider */
