@@ -3,9 +3,69 @@
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipe: true
+    swipe: true,
+    autoplay: false, // автоматическое переключение по умолчанию выключено
+    autoplaySpeed: 3000, // время показа каждого слайда
+    pauseOnHover: true // остановка автоматического переключения при наведении мыши
 });
 
+// обработчик события "mouseenter" - остановить автоматическое переключение при наведении мыши на слайдер
+$('.header__slick').on('mouseenter', function () {
+    $(this).slick('slickPause');
+});
+
+// обработчик события "mouseleave" - возобновить автоматическое переключение при убирании мыши с слайдера
+$('.header__slick').on('mouseleave', function () {
+    $(this).slick('slickPlay');
+});
+//--------------------------------------------------------
+$(document).ready(function () {
+    $('.portfolio__card-wrapper').slick({
+        infinite: true,
+        slidesToShow: 4, // количество показываемых слайдов
+        slidesToScroll: 1,
+        swipe: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../images/prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../images/next.svg"></button>',
+        appendArrows: $('.portfolio__card-wrapper'), // контейнер для кнопок
+
+
+        responsive: [
+            {
+                breakpoint: 768, // настройки для экранов шириной 768px и меньше
+                settings: {
+                    slidesToShow: 1 // показывать только по одному слайду
+                }
+            }
+        ]
+    });
+
+    // Удаление стрелок переключения из первого слайдера
+    $('.header__slick .slick-arrow').remove();
+});
+//--------------------------------------------------------
+$(document).ready(function () {
+    $('.clients__card-wrapper').slick({
+        infinite: true,
+        slidesToShow: 2, // количество показываемых слайдов
+        slidesToScroll: 1,
+        swipe: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../images/prev.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../images/next.svg"></button>',
+        appendArrows: $('.clients__arrows'), // контейнер для кнопок
+
+        responsive: [
+            {
+                breakpoint: 768, // настройки для экранов шириной 768px и меньше
+                settings: {
+                    slidesToShow: 1 // показывать только по одному слайду
+                }
+            }
+        ]
+    });
+});
+
+//----------------------------------------------------------
 
 
 const link1 = document.getElementById('myLink');
