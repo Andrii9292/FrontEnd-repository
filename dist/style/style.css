@@ -1397,6 +1397,21 @@ body {
   max-width: 133px;
   overflow: hidden;
 }
+.footer__contacts {
+  padding-top: 25px;
+}
+.footer__application {
+  padding-top: 25px;
+}
+.footer__application-title {
+  font-family: Ruberoid;
+  font-size: 2.6rem;
+  line-height: 3.5rem;
+  color: #495E4C;
+  max-height: 35px;
+  max-width: 270px;
+  overflow: hidden;
+}
 
 /* Slider */
 .slick-slider {
