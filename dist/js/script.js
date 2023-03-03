@@ -58,7 +58,7 @@ $(document).ready(function () {
             {
                 breakpoint: 768, // настройки для экранов шириной 768px и меньше
                 settings: {
-                    slidesToShow: 1 // показывать только по одному слайду
+                    slidesToShow: 4 // показывать только по одному слайду
                 }
             }
         ]
