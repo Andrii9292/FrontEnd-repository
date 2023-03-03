@@ -58,12 +58,25 @@ $(document).ready(function () {
             {
                 breakpoint: 768, // настройки для экранов шириной 768px и меньше
                 settings: {
-                    slidesToShow: 4 // показывать только по одному слайду
+                    slidesToShow: 1 // показывать только по одному слайду
+                }
+            },
+            {
+                breakpoint: 480, // настройки для экранов шириной 480px и меньше
+                settings: {
+                    slidesToShow: 1 // показывать только по одному слайду
+                }
+            },
+            {
+                breakpoint: 425, // настройки для экранов шириной 480px и меньше
+                settings: {
+                    slidesToShow: 1 // показывать только по одному слайду
                 }
             }
         ]
     });
 });
+
 
 //----------------------------------------------------------
 
@@ -201,3 +214,37 @@ window.addEventListener('scroll', function () {
     var header = document.querySelector('.header__wrapper');
     header.classList.toggle('sticky', window.scrollY > 85);
 });
+
+
+//----------------------------------------------------------
+// Получаем ссылки на элементы
+const menuLink = document.getElementById('menu');
+const closeLink = document.getElementById('close');
+const nav = document.querySelector('.header__nav');
+const header = document.querySelector('.header__button-top');
+const bodyy = document.querySelector('body');
+
+// Обработчик события для открытия меню
+menuLink.addEventListener('click', function() {
+    nav.classList.add('active');
+    closeLink.classList.add('active');
+    header.classList.add('active');
+    bodyy.classList.add('noscroll');
+});
+
+// Обработчик события для закрытия меню
+closeLink.addEventListener('click', function() {
+    nav.classList.remove('active');
+    closeLink.classList.remove('active');
+    header.classList.remove('active');
+    bodyy.classList.remove('noscroll');
+});
+
+// Обработчик события для закрытия меню при нажатии на "крестик"
+closeLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    nav.classList.remove('active');
+    bodyy.classList.remove('noscroll');
+});
+
+
