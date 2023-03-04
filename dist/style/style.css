@@ -2050,13 +2050,11 @@ body {
 
   .services__title::before {
     top: 73%;
-    right: 22.5%;
+    right: 18.5%;
   }
 
   .complex__title::before {
-    width: 160px;
-    top: 59%;
-    right: 2%;
+    display: none;
   }
 
   .complex__card {
@@ -2192,7 +2190,10 @@ body {
   }
 
   .portfolio__card {
-    max-width: 230px;
+    max-width: 100%;
+  }
+  .portfolio__card img {
+    max-height: 480px;
   }
 
   .clients__title {
@@ -2213,6 +2214,130 @@ body {
 
   .schemeWork__card img {
     left: -27%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 459px) {
+  .header__description {
+    font-size: 5.4rem;
+  }
+
+  .header__description::before {
+    width: 24%;
+    left: 56%;
+  }
+
+  .complex__title {
+    font-size: 2.5rem;
+  }
+
+  .complex__title::before {
+    width: 148px;
+    top: 74%;
+    right: 8%;
+  }
+
+  .schemeWork__card img {
+    left: -33%;
+    width: 100%;
+  }
+
+  .header__title {
+    font-size: 5.4rem;
+  }
+
+  .header__button-bottom {
+    padding-bottom: 100px;
+  }
+
+  .footer__application {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .schemeWork__card-title {
+    font-size: 2.5rem;
+    line-height: 4.7rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .header__description::before {
+    left: 61%;
+  }
+
+  .services__title::before {
+    right: 12.5%;
+  }
+
+  .slick-next, .slick-prev {
+    top: -14% !important;
+  }
+
+  .simple__image--1 img:nth-child(3) {
+    left: 30%;
+  }
+
+  .simple__image--2 img:nth-child(3) {
+    left: 34.5%;
+  }
+
+  .simple__image--3 img:nth-child(3) {
+    left: 30.5%;
+  }
+
+  .header__button-bottom {
+    padding-bottom: 15px;
+  }
+
+  .clients__description {
+    max-height: 180px;
+  }
+
+  .footer__contacts {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner__wrapper-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 10%;
+            flex: 1 0 10%;
+    max-width: 100%;
+  }
+
+  .footer__application {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 63%;
+    margin: 0 auto;
+  }
+
+  .footer__contacts {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 63%;
+    margin: 0 auto;
+  }
+
+  .schemeWork__card:nth-child(even) {
+    padding-top: 20px;
+  }
+
+  .schemeWork__card:nth-child(odd) {
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -2300,6 +2425,247 @@ body {
 
   .header__wrapper {
     padding: 26px 20px 40px 20px;
+  }
+
+  .header__description::before {
+    left: 62%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header__description::before {
+    left: 64%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header__description {
+    font-size: 4.4rem;
+    line-height: 5rem;
+  }
+
+  .header__title {
+    font-size: 4.4rem;
+  }
+
+  .header__link-bottom {
+    padding: 24px 80px;
+  }
+
+  .header__button-bottom {
+    padding-bottom: 140px;
+  }
+
+  .header__description::before {
+    left: 56%;
+    top: 7%;
+  }
+
+  .services__title::before {
+    right: 0;
+  }
+
+  .simple__title--1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  .simple__image--1 img:nth-child(3) {
+    left: 35%;
+  }
+
+  .simple__image--2 img:nth-child(3) {
+    left: 37.5%;
+  }
+
+  .simple__image--3 img:nth-child(3) {
+    left: 34.5%;
+  }
+
+  .simple__image--2 img:nth-child(1) {
+    left: -34%;
+  }
+
+  .simple__image--3 img:nth-child(1) {
+    left: -31.5%;
+  }
+
+  .comfort__title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .schemeWork__title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    max-height: 120px;
+  }
+
+  .portfolio__title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  .schemeWork {
+    margin-bottom: 15px;
+  }
+
+  .clients__title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  .clients__description {
+    max-height: 234px;
+  }
+
+  .header__link-bottom {
+    padding: 24px 50px;
+  }
+
+  .footer__contacts {
+    max-width: 70%;
+  }
+
+  .header__button-bottom2 {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__wrapper {
+    padding: 26px 10px 40px 10px;
+  }
+
+  .header__description {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+
+  .header__title {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+
+  .header__description::before {
+    left: 50%;
+    top: 6.2%;
+  }
+
+  .header__button-bottom {
+    padding-bottom: 170px;
+  }
+
+  .header {
+    margin-bottom: 15px;
+  }
+
+  .services__title {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+
+  .services__title::before {
+    right: 22px;
+    width: 50%;
+  }
+
+  .services__conditioning {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .services__ventilation-systems {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .services__climate-systems {
+    row-gap: 10px;
+    padding-left: 47px;
+  }
+
+  .services__text--3 {
+    max-width: 230px;
+  }
+
+  .complex__title {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .simple__title--1 {
+    line-height: 4rem;
+  }
+
+  .simple__image--2 img:nth-child(1) {
+    display: none;
+  }
+
+  .simple__image--3 img:nth-child(1) {
+    display: none;
+  }
+
+  .peculiarities__title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .comfort__title {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .peculiarities__card-description {
+    max-height: 83px;
+  }
+
+  .schemeWork__title {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .schemeWork__card-title {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+
+  .portfolio__title {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .portfolio__description {
+    max-height: 166px;
+  }
+
+  .clients__title {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .clients__description {
+    font-size: 1.4rem;
+  }
+
+  .header__button-bottom2 {
+    padding-bottom: 0;
+  }
+
+  .header__link-bottom {
+    padding: 24px 50px;
+  }
+
+  .footer__contacts {
+    max-width: 100%;
+  }
+
+  .footer__application {
+    max-width: 100%;
   }
 }
 /* Slider */

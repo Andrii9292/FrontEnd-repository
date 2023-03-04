@@ -4,9 +4,9 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     swipe: true,
-    autoplay: false, // автоматическое переключение по умолчанию выключено
-    autoplaySpeed: 3000, // время показа каждого слайда
-    pauseOnHover: true // остановка автоматического переключения при наведении мыши
+    autoplay: false,
+    autoplaySpeed: 3000,
+    pauseOnHover: true
 });
 
 // обработчик события "mouseenter" - остановить автоматическое переключение при наведении мыши на слайдер
@@ -18,6 +18,17 @@ $('.header__slick').on('mouseenter', function () {
 $('.header__slick').on('mouseleave', function () {
     $(this).slick('slickPlay');
 });
+
+// обработчик события "touchstart" - остановить автоматическое переключение при касании экрана
+$('.header__slick').on('touchstart', function () {
+    $(this).slick('slickPause');
+});
+
+// обработчик события "touchend" - возобновить автоматическое переключение при отпускании экрана
+$('.header__slick').on('touchend', function () {
+    $(this).slick('slickPlay');
+});
+
 //--------------------------------------------------------
 $(document).ready(function () {
     $('.portfolio__card-wrapper').slick({
